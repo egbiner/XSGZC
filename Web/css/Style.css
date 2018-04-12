@@ -1,0 +1,215 @@
+/* CSS Document */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "宋体";
+    color: #000;
+    font-size: 13px;
+    background-color: #FFF;
+    background-image: url(../img/sky.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.nav a, .index_tb a, li a, .page_line a, #foot a {
+    text-decoration: none;
+    color:#222;
+}
+ul{ margin:0; padding:0; list-style:none; }
+li{ margin:0; padding:0; list-style:none;}
+img{ border:none;}
+
+/* 最外层*/
+.main{ width:1024px; margin:0 auto; height:auto; border:none;  }
+
+/* 头部*/
+.header{ width:1024px; height:102px; padding:0; border:0;}
+.right_header{float:right;width:173px;margin-top: 25px;}
+#txt{border:2px solid #032c40;}
+#search{border:2px solid #032c40;background:#032c40;color:#fff;}
+/* 头部内的logo*/
+.logo{ width:1012px; height:80px; margin:0 0 0 10px; }
+
+/* 导航*/
+.nav{ width:1024px; height:60px; background:url(../img/nav_bg2.gif);z-index:999;position:absolute;}
+.ul1>li>a{ font-size:16px; width:102.4px; text-align:center;color:#FFF; float:left;line-height:37px;font-family:"宋体"; }
+.ul1>li>a:hover{line-height:37px;}
+.nav .on_link{color:yellow;}
+.ul1>li{
+	display: block;
+	width:93px;
+    height: 55px;
+	float: left;
+}
+.ul1>li:hover{
+	 color:blue;
+     background:url(../img/navnbg1.gif) no-repeat;
+     background-size: 100% 53px;
+}
+.ul1:first-child {
+    margin: 0;
+}
+.ul1 > li > a {
+    width: 94px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    font-family: "Microsoft Yahei";
+    /*margin: 0 5px;*/
+}
+.ul1>li:hover .ul2{
+	display: block;
+}
+.ul2{
+	display: none;
+	width: 93px;
+	height:71px;
+	background: #032C40;
+	margin-top: 40px;
+	position: relative;
+	z-index:99;
+}
+.ul2>li{
+	border-bottom: 1px solid #fff;
+	width:93px;
+	height: 35px;
+	text-align:center;
+	vertical-align: middle;
+}
+.ul2>li>a{
+	font-size:16px;
+	color:#FFF;
+	font-family:"宋体";
+	line-height: 35px;
+}
+.ul2>li:hover{
+	color:blue; background:none;
+}
+.ul2>li>a:hover{
+	color:blue;
+}
+
+
+
+.bottom{ width:100%; height:80px; margin-top:20px; clear:both; padding:10px 0px;}
+.bottom p{ width:auto; text-align:center; padding:0px; clear:both; line-height:10px;color:#3d3838;font-size:12px;}
+
+
+.MM ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+.MM li {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	list-style-type: none;
+	display: block;
+	text-decoration: none;
+	height: 26px;
+	width: 182px;
+	padding-left: 0px;
+}
+.MM {
+	width: 182px;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px,0px,0px,0px);
+}
+.MM a:link {
+	font-family:"宋体";
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	background-image: url(../img/menu_bg1.gif);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 182px;
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.MM a:visited {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	background-image: url(../img/menu_bg1.gif);
+	background-repeat: no-repeat;
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	width: 182px;
+	text-decoration: none;
+}
+.MM a:active {
+	font-family:"宋体";
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	background-image: url(../img/menu_bg1.gif);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 182px;
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.MM a:hover {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bolder;
+	color: #006600;
+	background-image: url(../img/menu_bg2.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	width: 182px;
+	text-decoration: none;
+}
+
+.other{
+    margin-bottom: 12px;
+}
+
+.next_befor{
+    border-top: 3px solid #06284A;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 17px;
+}
+#content{
+    width:87%;
+    height:auto;
+    margin:auto;
+    margin-top: 26px;
+}
+.pageNumber {
+    margin-top:20px;
+    margin-left: 10px;
+    border-top: 3px solid #06284A;
+    padding-top: 13px;
+}

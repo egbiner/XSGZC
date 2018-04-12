@@ -1,0 +1,92 @@
+﻿.friend_link {
+    border: 1px solid #CCC;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+}
+.friend_link .top_div {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.link_img {
+    width:50px;
+    height:58px;
+    margin: 9px;
+}
+.xgdt_title {
+    height: 20px;
+    padding: 0px 22px 6px 23px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #cc0100;
+    background: url(../img/style/bbj.png);
+    background-size: 100% 100%;
+}
+.xgdt_title a {
+    float: right;
+    color: #0A51A1;
+    line-height: 25px;
+    font-weight: normal;
+}
+.xyfc {
+    margin-top: 20px;
+}
+.xyfc_title {
+    height: 25px;
+    font-size: 15px;
+    color: #0A51A1;
+    font-weight: bold;
+    padding: 0 22px 0 30px;
+    border-bottom: 1px #CCC solid;
+}
+.xyfc_title a {
+    font-size: 14px;
+    float: right;
+    color: #0A51A1;
+    line-height: 25px;
+    font-weight: normal;
+}
+.xyfc_title span{
+    border: 1px #CCC solid;
+    border-bottom: none;
+    padding: 5px 7px;
+}
+.wdmtg {
+    margin-left: 18px;
+}
+.wdmtg_title {
+    height: 25px;
+    font-weight: bold;
+    padding: 7px 10px 0 30px;
+    background: url(../img/style/back.gif);
+}
+.wdmtg_content {
+    width: 220px;
+    padding-bottom: 11px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.wdmtg_title a {
+    float: right;
+}
+.xxwj {
+    margin-top:10px;
+}
+#foot {
+    height: 100px;
+    border-top: 2px solid #1d87be;
+    background: #f7f7f7;
+    margin-top: 10px;
+}
+#foot p {
+    text-align:center;
+}
+#foot a:hover {
+    color: #0A51A1;
+}
+.exp:hover {
+    cursor: pointer;
+    color:deeppink;
+}
