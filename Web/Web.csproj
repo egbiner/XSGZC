@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\LitJSON.dll</HintPath>
+      <HintPath>..\DAL\bin\Debug\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -62,12 +62,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\college_img.aspx" />
     <Content Include="admin\index.aspx" />
     <Content Include="admin\login.aspx" />
     <Content Include="admin\news_add.aspx" />
     <Content Include="admin\news_edit.aspx" />
     <Content Include="admin\news_list.aspx" />
     <Content Include="admin\pwd_change.aspx" />
+    <Content Include="admin\scroll_img.aspx" />
     <Content Include="admin\select.aspx" />
     <Content Include="admin\test.aspx" />
     <Content Include="admin\css\admin_index.css" />
@@ -282,6 +284,7 @@
     <Content Include="admin\js\kindeditor\themes\simple\simple.css" />
     <Content Include="admin\js\Particleground.js" />
     <Content Include="admin\js\show_kind_editor.js" />
+    <Content Include="admin\url_add.aspx" />
     <Content Include="css\index.css" />
     <Content Include="css\style2.css" />
     <Content Include="css\list.css" />
@@ -406,8 +409,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\ashx\img_manage.ashx.cs">
+      <DependentUpon>img_manage.ashx</DependentUpon>
+    </Compile>
     <Compile Include="admin\ashx\pwd_modify.ashx.cs">
       <DependentUpon>pwd_modify.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\college_img.aspx.cs">
+      <DependentUpon>college_img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\college_img.aspx.designer.cs">
+      <DependentUpon>college_img.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -451,6 +464,13 @@
     <Compile Include="admin\pwd_change.aspx.designer.cs">
       <DependentUpon>pwd_change.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\scroll_img.aspx.cs">
+      <DependentUpon>scroll_img.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\scroll_img.aspx.designer.cs">
+      <DependentUpon>scroll_img.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,6 +489,13 @@
     </Compile>
     <Compile Include="admin\ashx\news_edit.ashx.cs">
       <DependentUpon>news_edit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\url_add.aspx.cs">
+      <DependentUpon>url_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\url_add.aspx.designer.cs">
+      <DependentUpon>url_add.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -505,6 +532,7 @@
     <Content Include="admin\css\font\adminthemes-webfont.woff" />
     <Content Include="admin\css\font\adminthemes-webfont.woff2" />
     <Content Include="admin\ashx\pwd_modify.ashx" />
+    <Content Include="admin\ashx\img_manage.ashx" />
     <None Include="Properties\PublishProfiles\XSGZC.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -30,6 +30,9 @@
                     <dd><a href="#" id="news_list" class="active">新闻管理</a></dd>
                     <dd><a href="#" id="news_add">发布新闻</a></dd>
                     <dd><a href="#" id="pwd_change">修改密码</a></dd>
+                    <dd><a href="#" id="url_add">友情链接管理</a></dd>
+                    <dd><a href="#" id="scroll_img">滚动图片管理</a></dd>
+                    <dd><a href="#" id="college_img">学风图片管理</a></dd>
                 </dl>
             </li>
             <li>

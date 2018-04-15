@@ -1,0 +1,195 @@
+
+
+
+/******************************
+	-	BUTTONS	-
+*******************************/
+
+.button				{	padding:6px 13px 5px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; height:30px;
+						cursor:pointer;
+						color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
+						background:url(../images/gradient/g30.png) repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
+					}
+
+.button.big			{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(../images/gradient/g40.png) repeat-x top;}
+
+
+.purchase:hover,
+.button:hover,
+.button.big:hover		{	background-position:bottom, 15px 11px;}
+
+
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	 }
+
+
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.button	{	padding:4px 8px 3px; line-height:25px !important; font-size:11px !important;font-weight:normal;	}
+		a.button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
+
+
+	}
+
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+		.button	{	padding:2px 5px 2px; line-height:20px !important; font-size:10px !important;}
+		a.button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
+	}
+
+
+
+
+
+/*	BUTTON COLORS	*/
+
+
+
+.button.green, .button:hover.green,
+.purchase.green, .purchase:hover.green			{ background-color:#21a117; -webkit-box-shadow:  0px 3px 0px 0px #104d0b;        -moz-box-shadow:   0px 3px 0px 0px #104d0b;        box-shadow:   0px 3px 0px 0px #104d0b;  }
+
+
+.button.blue, .button:hover.blue,
+.purchase.blue, .purchase:hover.blue			{ background-color:#1d78cb; -webkit-box-shadow:  0px 3px 0px 0px #0f3e68;        -moz-box-shadow:   0px 3px 0px 0px #0f3e68;        box-shadow:   0px 3px 0px 0px #0f3e68;}
+
+
+.button.red, .button:hover.red,
+.purchase.red, .purchase:hover.red				{ background-color:#cb1d1d; -webkit-box-shadow:  0px 3px 0px 0px #7c1212;        -moz-box-shadow:   0px 3px 0px 0px #7c1212;        box-shadow:   0px 3px 0px 0px #7c1212;}
+
+.button.orange, .button:hover.orange,
+.purchase.orange, .purchase:hover.orange		{ background-color:#ff7700; -webkit-box-shadow:  0px 3px 0px 0px #a34c00;        -moz-box-shadow:   0px 3px 0px 0px #a34c00;        box-shadow:   0px 3px 0px 0px #a34c00;}
+
+.button.darkgrey,.button.grey,
+.button:hover.darkgrey,.button:hover.grey,
+.purchase.darkgrey, .purchase:hover.darkgrey	{ background-color:#555; -webkit-box-shadow:  0px 3px 0px 0px #222;        -moz-box-shadow:   0px 3px 0px 0px #222;        box-shadow:   0px 3px 0px 0px #222;}
+
+.button.lightgrey, .button:hover.lightgrey,
+.purchase.lightgrey, .purchase:hover.lightgrey	{ background-color:#888; -webkit-box-shadow:  0px 3px 0px 0px #555;        -moz-box-shadow:   0px 3px 0px 0px #555;        box-shadow:   0px 3px 0px 0px #555;}
+
+
+
+
+
+
+/******************************
+	-	IE8 HACKS	-
+*******************************/
+.noFilterClass {
+	filter:none !important;
+}
+
+
+
+
+
+
+/*************************************
+	-	TP ARROWS 	-
+**************************************/
+.tparrows												{	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+															-moz-opacity: 1;
+															-khtml-opacity: 1;
+															opacity: 1;
+															-webkit-transition: opacity 0.2s ease-out; -moz-transition: opacity 0.2s ease-out; -o-transition: opacity 0.2s ease-out; -ms-transition: opacity 0.2s ease-out;
+
+														}
+.tparrows.hidearrows									{
+															-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+															-moz-opacity: 0;
+															-khtml-opacity: 0;
+															opacity: 0;
+														}
+.tp-leftarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_left.png) no-Repeat top left;	width:40px;	height:40px;   }
+.tp-rightarrow											{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_right.png) no-Repeat top left;	width:40px;	height:40px;   }
+
+
+.tp-leftarrow.round										{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_left.png) no-Repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left; margin-top:-7px;	}
+.tp-rightarrow.round									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_right.png) no-Repeat top left;	width:19px;	height:14px;  margin-right:0px; float:left;	margin-top:-7px;}
+
+
+.tp-leftarrow.round-old									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left.png) no-Repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left; margin-top:-13px;	}
+.tp-rightarrow.round-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right.png) no-Repeat top left;	width:26px;	height:26px;  margin-right:0px; float:left;	margin-top:-13px;}
+
+
+.tp-leftarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_left_boxed.png) no-Repeat top left;	width:20px;	height:15px;   float:left;	margin-right:6px; margin-top:12px;}
+.tp-rightarrow.navbar									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/small_right_boxed.png) no-Repeat top left;	width:20px;	height:15px;   float:left;	margin-left:6px; margin-top:12px;}
+
+
+.tp-leftarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrowleft.png) no-Repeat top left;		width:9px;	height:16px;   float:left;	margin-right:6px; margin-top:10px;}
+.tp-rightarrow.navbar-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrowright.png) no-Repeat top left;	width:9px;	height:16px;   float:left;	margin-left:6px; margin-top:10px;}
+
+.tp-leftarrow.navbar-old.thumbswitharrow				{	margin-right:10px; }
+.tp-rightarrow.navbar-old.thumbswitharrow				{	margin-left:0px; }
+
+.tp-leftarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
+.tp-rightarrow.square									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
+
+
+.tp-leftarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_left2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-right:0px; margin-top:-9px;}
+.tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
+
+
+.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_left.png) no-Repeat 0 0;	width:40px;	height:40px;
+
+														}
+.tp-rightarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/large_right.png) no-Repeat 0 0;	width:40px;	height:40px;
+
+														}
+
+
+
+
+.tp-leftarrow:hover,
+.tp-rightarrow:hover 									{	background-position:bottom left; }
+
+
+
+
+
+
+
+/*********************************************
+
+	-	BASIC SETTINGS FOR THE BANNER	-
+
+***********************************************/
+
+ .tp-simpleresponsive img {
+		-moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+}
+
+
+
+.tp-simpleresponsive a{	text-decoration:none;}
+
+.tp-simpleresponsive ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.tp-simpleresponsive >ul >li{
+	list-stye:none;
+	position:absolute;
+	visibility:hidden;
+}
+/*  CAPTION SLIDELINK   **/
+.caption.slidelink a div,
+.tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(../assets/coloredbg.png) repeat;}
+
+.tp-loader 	{	background:url(../assets/loader.gif) no-repeat 10px 10px; background-color:#fff;  margin:-22px -22px; top:50%; left:50%; z-index:10000; position:absolute;width:44px;height:44px;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+			}
+
+
+.tp-transparentimg {	content:"url(../assets/transparent.png)"}
+.tp-3d				{	-webkit-transform-style: preserve-3d;
+						 -webkit-transform-origin: 50% 50%;
+					}
+

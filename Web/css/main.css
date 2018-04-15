@@ -1,0 +1,37 @@
+
+
+@import url("../rs-plugin/css/settings.css");
+
+
+
+
+html {
+	overflow-x:hidden;
+	padding: 0 !important;
+	background:#fff;
+	margin:0px !important;
+}
+
+
+.fullwidthbanner-container{
+		width:100% !important;
+		position:relative;
+		padding:0;
+		overflow:hidden;
+		background: gray;
+		margin-bottom: 20px;
+}
+
+#revolution-slider{
+		max-height:400px !important;
+}
+
+.tparrows{ top:50% !important;}
+
+.med{
+	font-size:24px;
+	letter-spacing:-.5px;
+}
+
+
+

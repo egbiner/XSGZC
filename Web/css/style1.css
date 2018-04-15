@@ -3,15 +3,13 @@
 body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, form, legend, fieldset, input, button, select, textarea {margin:0; padding:0; font-weight: normal;font-style: normal;font-size: 100%; font-family:'微软雅黑', 'Microsoft YaHei', 'YaHei', sans-serif;} 
 ol, ul ,li{list-style: none;} 
 img {border: 0;} 
-body {color:#666; background:url(../images/sky.jpg) repeat-x; font: 12px/1.5 Arial, Helvetica, sans-serif;} 
+body {color:#666;font: 12px/1.5 Arial, Helvetica, sans-serif;background:url(../images/sky.jpg);background-repeat:no-repeat;background-size:contain;} 
 html{-webkit-text-size-adjust:none;}/*chrome font-size<12px */
 /*清除浮动样式class="clearfix"*/
 .clearfix:after { content:"."; display:block; height:0;	clear:both;	visibility:hidden;}
 a { color:#666; text-decoration:none;}
 a:hover { color:#0aa6d6; text-decoration:underline;}
-
-.all-web{width: 1200px; margin: auto;}
-
+.all-web{width: 1200px; margin: auto;/*background:url(../images/sky.jpg);background-repeat:no-repeat;background-size:contain;*/}
 
 /********** index2 style start **********/
 #hearder2 { width:1000px; margin:0 auto;}
@@ -25,6 +23,7 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #hearder2 .form-tools .search-box { width:100%; height:50px; position:relative;}
 #hearder2 .form-tools .search-box .input-text { width:130px; height:15px; position:absolute; top:50px; right:0; padding:5px 30px 5px 5px; border:1px solid #ccc; border-radius:3px; background:#fff;}
 #hearder2 .form-tools .search-box .input-submit { width:25px; height:25px; position:absolute; top:50px; right:0;border:1px solid #ccc; border-top-right-radius:3px; border-bottom-right-radius:3px;}
+
 #menu-box { width:100%; background:#0aa6d6;}
 #menu-box ul li ul li a:hover{background: #0782a8; }
 #menu-box ul li:hover ul{ display:block; z-index: 999;}
@@ -34,29 +33,24 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #menu-box ul li { width:111px; height:40px; line-height:40px; float:left; text-align:center; font-size:16px;}
 #menu-box ul li:hover { background:#0782a8;}
 #menu-box ul li a{ color:#fff; text-decoration:none; display:block;}
+
 /* slider */
-#slider-box { width:100%; height:420px; text-align:center; margin-bottom:15px; border-bottom:1px solid #aaa;}
-
-
+#slider-box { width:100%; height:270px; text-align:center; margin-bottom:15px; border-bottom:1px solid #aaa;}
 /* --- 通用样式 --- */
 .title-box { height:35px; background:url(../images/title-bg1.png); text-align:left; font-size:15px; line-height:35px; color:#0aa6d6; position:relative;}
 .title-more { position:absolute; top:3px; right:0; font-size:12px; color:#0aa6d6;}
 
 
-
-#index1-div1 { width:1000px; height:280px; margin:0 auto 15px auto;}
-#index1-div1 .index1-left675 { width:675px; height:270px; float:left; overflow:hidden;}
+#index1-div1 { width:1000px; margin:0 auto 15px auto;}
+#index1-div1 .index1-left675 { width:675px; height:205px; float:left; overflow:hidden;}
 #index1-div1 .index1-left675 p{ padding:10px; font-size:12px;text-indent: 2em; line-height:20px; color:#888;}
-#index1-div1 .index1-left675 p img{width: 280px; height: 250px; margin:0 10px 10px 0;}
+#index1-div1 .index1-left675 p img{ margin:0 10px 10px 0;}
 #index1-div1 .index1-left675 p a{ margin-left:20px; color:#0aa6d6; font-size:12px;}
 
-
-
-#index1-div1 .index1-right300 { width:300px; height:270px; float:right; overflow:hidden;}
-#index1-div1 .index1-right300 li{ height:40px; line-height:40px; padding-left:24px; background:url(../images/li.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
+#index1-div1 .index1-right300 { width:300px; height:205px; float:right; overflow:hidden;}
+#index1-div1 .index1-right300 li{ height:40px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
 #index1-div1 .index1-right300 li a { width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
 #index1-div1 .index1-right300 li span { position:absolute; top:0; right:0; color:#bbb; font-size:12px;}
-#index1-div1 .notice { width:300px; height:270px; float:right; overflow:hidden;}
 
 #index1-div2 { width:1000px; margin:0 auto 15px auto;}
 #index1-div2 .index1-left675 { width:675px; float:left; overflow:hidden;}
@@ -73,26 +67,25 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 .index1-scrollleft li{float:left;margin-right:7px;display:inline;width:220px;text-align:center;line-height:19px}
 .index1-scrollleft img{width:190px;height:140px;padding:10px;border:solid 1px #ddd;}
 
-/*tab切换样式*/
-.wrap{width: 300px; height: 260px; margin: auto;}
-.tabClick{ overflow: hidden; color: #0AA6D6; background:none;  margin-left: 0px;}
-.tabClick li{ height:40px; line-height: 40px; width: 100px; float: left; text-align: center; cursor: pointer; }
-.tabClick li.active{ color: #0aa6d6; transition: 0.1s;}
-.tabCon{ overflow: hidden}
-.tabBox{ position: relative}
-#wrap .tabList  li{ height:40px; line-height:40px; padding-left:24px; background:url(../images/icon2.gif) left center no-repeat; text-align:left; font-size:14px; overflow: hidden; border-bottom:1px dotted #ccc; position:relative;}
-.lineBorder{ height: 2px; overflow: hidden; background: #f3f3f3}
-.lineDiv{ background: #0aa6d6; height: 2px; width: 100px;}
-
 #index1-div2 .index1-right300 { width:300px; float:right; }
+#index1-div2 .index1-right300 .index1-login-box { width:300px; height:260px; background:#fff;}
+#index1-div2 .index1-right300 .index1-login-box .index1-uname { width:206px; height:20px; padding:5px; border:1px solid #ccc; background:#fff; margin:30px 41px 0 41px;}
+#index1-div2 .index1-right300 .index1-login-box .index1-upass { width:206px; height:20px; padding:5px; border:1px solid #ccc; background:#fff; margin:20px 41px 0 41px;}
+#index1-div2 .index1-right300 .index1-login-box .index1-t-link { width:208px; height:20px; padding:5px; margin:10px 20px 10px 41px;}
+#index1-div2 .index1-right300 .index1-login-box .index1-t-link .index1-chek { margin:0 5px 0 25px;}
+#index1-div2 .index1-right300 .index1-login-box .index1-t-link a { margin-left:30px;}
+#index1-div2 .index1-right300 .index1-login-box .index1-input-login { width:88px; height:28px; background:#0aa6d6; border:1px solid #0aa6d6; cursor:pointer; margin-left:46px; color:#fff;}
+#index1-div2 .index1-right300 .index1-login-box .index1-input-login:hover { width:88px; height:28px; background:#fff; border:1px solid #0aa6d6; cursor:pointer; color:#0aa6d6;}
+#index1-div2 .index1-right300 .index1-login-box .index1-input-but { width:88px; height:28px; background:#fff; border:1px solid #0aa6d6; cursor:pointer; margin-left:25px; color:#0aa6d6;}
+#index1-div2 .index1-right300 .index1-login-box .index1-input-but:hover { background:#0aa6d6; border:1px solid #0aa6d6; cursor:pointer; margin-left:25px; color:#fff;}
 #index1-div2 .index1-right300 .index1-list-menu { background:#f2f2f2; padding:10px 20px 30px 20px;}
 #index1-div2 .index1-right300 .index1-list-menu li { height:35px; line-height:35px; text-align:center; font-size:16px; background:#fff; border:1px solid #ccc; margin-top:25px;}
 #index1-div2 .index1-right300 .index1-list-menu li a { display:block;}
 #index1-div2 .index1-right300 .index1-list-menu li a:hover { display:block; background:#0aa6d6; color:#fff; text-decoration:none;}
 
 
-#div5 { width:100%; background:#f4f4f4; border-top:1px solid #ccc;}
-#div5 .link-box { width:1000px;  padding-left: 200px; height:65px; line-height:65px; margin:0 auto; font-size:14px;}
+#div5 { width:; background:#f4f4f4; border-top:1px solid #ccc;}
+#div5 .link-box { width:1000px; height:65px;  padding-left: 250px;line-height:65px; margin:0 auto; font-size:14px;}
 #div5 .link-box .select-link { padding:3px 15px; margin-right:50px; color:#666;}
 
 #div6 { width:100%; height:45px; background:#0aa6d6; color:#fff; text-align:center; line-height:45px;}
@@ -101,10 +94,10 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #detail2-box { width:998px; background:url(../images/ny-bg1.png) top left repeat-x; margin:0 auto 15px auto; border:1px solid #ccc; border-radius:5px;}
 #detail2-box .tit-80 { height:77px; line-height:60px; color:#fff; font-size:14px; padding:0 20px 20px 75px; background:url(../images/tit-icon.png) 20px 10px no-repeat; background-size:32px;}
 #detail2-box .tit-80 a { color:#fff;}
-#detail2-box .tabula-box { width:240px; background:url(../images/left-bg.jpg)right 50px no-repeat; padding:10px; float:left;}
+#detail2-box .tabula-box { width:240px; height:740px;background:/*#0aa6d6*/url(../images/left-bg1.jpg) right 50px no-repeat;background-size:height:740px; padding:10px; float:left;}
 #detail2-box .tabula-box .max-tit { width:220px; height:40px; line-height:40px; text-align:center; color:#0aa6d6; font-size:18px; border-bottom:1px dotted #0aa6d6; margin-left:10px;}
 #detail2-box .tabula-box ul { padding:10px; min-height:380px;}
-#detail2-box .tabula-box ul li{ height:35px; padding-left:30px; line-height:35px; font-size:16px; border-bottom:1px dotted #ccc; background:url(../images/li2.png) left center no-repeat;}
+#detail2-box .tabula-box ul li{ height:35px; padding:21px 30px 21px 30px; line-height:35px; font-size:16px;border-bottom:1px dotted #ccc; background:url(../images/li2.png) left center no-repeat;}
 
 #detail2-box .content-box { width:695px; padding:0 20px; float:right;}
 #detail2-box .content-box .content { padding:0 0 20px 0; min-height:600px;}
@@ -121,11 +114,6 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #detail2-box .content-box li.pic{ width:225px; margin-left:10px; margin-bottom:20px; float:left;}
 #detail2-box .content-box li.pic .img-box{ width:203px; height:140px; margin-right:10px; padding:10px; border:1px solid #ccc; }
 #detail2-box .content-box li.pic .img-box img { width:203px; height:140px;}
-
-
-
-
-
 
 
 /* 分页 */

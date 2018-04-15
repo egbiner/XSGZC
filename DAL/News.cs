@@ -124,5 +124,26 @@ namespace MyClass
                 new SqlParameter("@id", id)
                 );
         }
+
+        public static Page GetSearchPage(int page_size, int page_number, string keywords)
+        {
+            string count = SqlHelper.ExecuteScalar("select count(1) from news where title like '%" + @keywords + "%'",
+                new SqlParameter("@keywords", keywords)).ToString();
+
+            DataTable dt = SqlHelper.ExecuteDataTable(page_size, page_number,
+                "select id from v_news where title like '%" + @keywords + "%' order by create_time desc",
+                new SqlParameter("@keywords", keywords)
+                );
+            List<News> news_lst = new List<News>();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                int id = int.Parse(dt.Rows[i]["id"].ToString());
+                News news = new News(id);
+                news_lst.Add(news);
+            }
+            int total = int.Parse(count);
+            int total_page = total / page_size + 1;
+            return new Page(news_lst, total, page_size, page_number);
+        }
     }
 }
