@@ -10,6 +10,6 @@
 namespace Web {
     
     
-    public partial class index {
+    public partial class news_detail {
     }
 }
