@@ -31,7 +31,7 @@
             <%int i = search_page.number_start; %>
                          <% foreach (var news in search_page.pages) { %>
                         <ul>
-                            <li class="text"><a href="news_detail.aspx?id=<%=news.id %>"><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>
+                            <li class="text"><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>"><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>
                         </ul>
                         <% } %>  
         </ul>

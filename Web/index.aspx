@@ -88,7 +88,7 @@ window.open(selObj.options[selObj.selectedIndex].value);}
 		</div>
 </div>
 <!-- index1-div1 -->
-<div id="index1-div1" class="clearfix">
+<%--<div id="index1-div1" class="clearfix">
 	<div class="index1-left675">
     	<div class="title-box">党建快讯<a href="news_detail.aspx?tid=11" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
         <p><img src="images/p-img.jpg" align="left">
@@ -98,14 +98,61 @@ window.open(selObj.options[selObj.selectedIndex].value);}
                 <%=news_page7.pages[0].contents.Substring(0, 320)%>...
             <%} %>
         <a href="news_detail.aspx?id=<%=news_page7.pages[0].id %>">查看更多</a></p>
+    </div>--%>
+<!--di~ didi-->
+<div id="index1-div1" class="clearfix">
+	<div class="index1-left675" id="tab_scroll">
+<ul id="tab">
+    <li class="fli"><a href="news_detail.aspx?tid=11" target="_blank">党建快讯</a></li>
+    <li ><a href="news_detail.aspx?tid=12" target="_blank">学工党讯</a></li>
+</ul>
+<div id="tab_con">
+    <div class="fdiv">
+	    <p><img src="images/p-img.jpg" align="left">
+            <%if (news_page7.pages[0].contents.Length <= 290){%>
+                    <%=news_page7.pages[0].contents%>
+            <%}else{%>
+                <%=news_page7.pages[0].contents.Substring(0, 290)%>...
+            <%} %>
+            <a href="news_detail.aspx?id=<%=news_page7.pages[0].id %>">查看更多</a></p>
     </div>
+<div >
+    <ul style="padding-left: 15px;">
+          <% foreach (var news in news_page8.pages) { %>
+            <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
+         <%} %>
+    </ul>		
+</div>
+</div>
+
+<script type="text/javascript">
+    var tabs = document.getElementById("tab").getElementsByTagName("li");
+    var divs = document.getElementById("tab_con").getElementsByTagName("div");
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].onmouseover = function () { change(this); }  
+    }
+    function change(obj) {
+        for (var i = 0; i < tabs.length; i++) {
+            if (tabs[i] == obj) {
+                tabs[i].className = "fli";
+                divs[i].className = "fdiv";
+            }
+            else {
+                tabs[i].className = "";
+                divs[i].className = "";
+            }
+        }
+    }
+</script>
+    </div>
+
     <div class="index1-right300">
     	<div class="title-box">通知公告<a href="news_list.aspx?tid=1#detail2-box" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
           <div id="demo" class="notice">
           <ul id="demo1">
                <% foreach (var news in news_page1.pages) { %>
                 <li>
-                    <a href="news_detail.aspx?id=<%=news.id %>" target="_blank" title=""><%=news.title %></a>&nbsp;<span>[<%=news.create_time.ToString("yyyy-MM-dd") %>]</span>
+                    <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a>&nbsp;<span>[<%=news.create_time.ToString("yyyy-MM-dd") %>]</span>
                 </li>
                 <% } %>
 
@@ -124,7 +171,7 @@ window.open(selObj.options[selObj.selectedIndex].value);}
             <ul>
                 <% foreach (var news in news_page2.pages) { %>
                     <li>
-                        <a href="news_detail.aspx?id=<%=news.id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span>
+                        <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span>
                     </li>
                  <% } %>
             </ul>
@@ -153,7 +200,7 @@ window.open(selObj.options[selObj.selectedIndex].value);}
             <img src="images/c2.jpg" style="width:330px; height:140px; margin:5px 0;">
             <ul>
                  <% foreach (var news in news_page3.pages) { %>                             
-                    <li><a href="news_detail.aspx?id=<%=news.id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>                                  
+                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>                                  
                  <% } %>
             </ul>
         </div>
@@ -186,7 +233,7 @@ window.open(selObj.options[selObj.selectedIndex].value);}
         </div>
         <!-- slider end -->
     </div>
-    <div class="index1-right300">
+<%--    <div class="index1-right300">
 		<div class="index1-login-box">
 			<div class="wrap" id="wrap">
 				<ul class="tabClick title-box">
@@ -194,6 +241,15 @@ window.open(selObj.options[selObj.selectedIndex].value);}
 		
 					<li>校学文件</li>
 					<li>资料下载</li>
+				</ul>--%>
+  <div class="index1-right300">
+		<div class="index1-login-box">
+			<div class="wrap" id="wrap">
+				<ul class="tabClick title-box">
+					<li class="active"><a href="news_list.aspx?tid=4#detail2-boxl" target="_blank">晚点名提纲</a></li>
+		
+					<li><a href="news_list.aspx?tid=9#detail2-box" target="_blank">校学文件</a></li>
+					<li><a href="news_list.aspx?tid=8#detail2-box" target="_blank">资料下载</a></li>
 				</ul>
 				<div class="lineBorder">
 					<div class="lineDiv">
@@ -206,7 +262,7 @@ window.open(selObj.options[selObj.selectedIndex].value);}
 							
 						<ul>
 			                 <% foreach (var news in news_page4.pages) { %>
-                                    <li><a href="news_detail.aspx?id=<%=news.id %>#detail2-box" target="_blank" title=""><%=news.title %></a></li>
+                                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>#detail2-box" target="_blank" title=""><%=news.title %></a></li>
                             <% } %>
 			           		
 						</ul>			
@@ -214,14 +270,14 @@ window.open(selObj.options[selObj.selectedIndex].value);}
 						<div class="tabList">
 							<ul>
 			                 <% foreach (var news in news_page5.pages) { %>                                    
-                                <li><a href="news_detail.aspx?id=<%=news.id %>" target="_blank" title=""><%=news.title %></a></li>
+                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a></li>
                            <% } %>
 						</ul>	
 						</div>
 						<div class="tabList">
 							<ul>
 			                <% foreach (var news in news_page6.pages) { %>
-                                <li><a href="news_detail.aspx?id=<%=news.id %>" target="_blank" title=""><%=news.title %></a></li>
+                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a></li>
                             <% } %>	      
 						</ul>	
 						</div>
@@ -297,17 +353,17 @@ window.open(selObj.options[selObj.selectedIndex].value);}
               tabList[i].style.display='table-cell';
         }
         
-        for(var i = 0 ;i<tabLi.length; i++ ){
+        for (var i = 0; i < tabLi.length; i++) {
             tabLi[i].start = i;
-            tabLi[i].onclick = function(){
+            tabLi[i].onmouseover = function () {
                 var star = this.start;
-                for(var i = 0 ;i<tabLi.length; i++ ){
-                    tabLi[i].className='';
+                for (var i = 0; i < tabLi.length; i++) {
+                    tabLi[i].className = '';
                 };
-                tabLi[star].className='active';
-                init.lineAnme(lineDiv,windowWidth/tabLi.length*star)
-                init.translate(tabBox,windowWidth,star);
-                endX= -star*windowWidth;
+                tabLi[star].className = 'active';
+                init.lineAnme(lineDiv, windowWidth / tabLi.length * star)
+                init.translate(tabBox, windowWidth, star);
+                endX = -star * windowWidth;
             }
         }
         

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>三级网页</title>
+<title>学生工作处</title>
 <link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
 </head>
 
@@ -17,11 +17,20 @@
   <object width="100%" height="270px"  data="images/flash3.swf" type="application/x-shockwave-flash"></object>
 </div>
 
-
+<script type="text/javascript">
+    var dq = 0;
+    function wordChange(a) {
+        if (!(dq == 0)) {
+            dq.style.color = "#ff0000";
+        }
+        a.style.color = "#ff0000";
+        dq = a;
+    }
+</script>
 
 <!-- detail -->
 <div id="detail2-box" class="clearfix">
-	<div class="tit-80"><a href="news_list.aspx?tid=1#detail2-box">新闻中心</a> - <a href="news_list.aspx?tid=<%=news.type_id %>#detail2-box"><%=type_name %></a> - 新闻详情</div>
+	<div class="tit-80"><a href="index.aspx">首页</a> - <a href="news_list.aspx?tid=1#detail2-box">新闻中心</a> - <a href="news_list.aspx?tid=<%=news.type_id %>#detail2-box"><%=type_name %></a> - 新闻详情</div>
 
     <!--#include file="nav.aspx"-->
 

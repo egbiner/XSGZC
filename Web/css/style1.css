@@ -7,8 +7,11 @@ body {color:#666;font: 12px/1.5 Arial, Helvetica, sans-serif;background:url(../i
 html{-webkit-text-size-adjust:none;}/*chrome font-size<12px */
 /*清除浮动样式class="clearfix"*/
 .clearfix:after { content:"."; display:block; height:0;	clear:both;	visibility:hidden;}
-a { color:#666; text-decoration:none;}
+
+a,a:visited { color:#666; text-decoration:none; outline: none;}
 a:hover { color:#0aa6d6; text-decoration:underline;}
+
+
 .all-web{width: 1200px; margin: auto;/*background:url(../images/sky.jpg);background-repeat:no-repeat;background-size:contain;*/}
 
 /********** index2 style start **********/
@@ -94,10 +97,11 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #detail2-box { width:998px; background:url(../images/ny-bg1.png) top left repeat-x; margin:0 auto 15px auto; border:1px solid #ccc; border-radius:5px;}
 #detail2-box .tit-80 { height:77px; line-height:60px; color:#fff; font-size:14px; padding:0 20px 20px 75px; background:url(../images/tit-icon.png) 20px 10px no-repeat; background-size:32px;}
 #detail2-box .tit-80 a { color:#fff;}
-#detail2-box .tabula-box { width:240px; height:740px;background:/*#0aa6d6*/url(../images/left-bg1.jpg) right 50px no-repeat;background-size:height:740px; padding:10px; float:left;}
+#detail2-box .tabula-box {width: 240px;background: url(../images/left-bg.jpg)right 50px no-repeat;   padding: 10px;    float: left;}
 #detail2-box .tabula-box .max-tit { width:220px; height:40px; line-height:40px; text-align:center; color:#0aa6d6; font-size:18px; border-bottom:1px dotted #0aa6d6; margin-left:10px;}
 #detail2-box .tabula-box ul { padding:10px; min-height:380px;}
-#detail2-box .tabula-box ul li{ height:35px; padding:21px 30px 21px 30px; line-height:35px; font-size:16px;border-bottom:1px dotted #ccc; background:url(../images/li2.png) left center no-repeat;}
+#detail2-box .tabula-box ul li{ height:35px; padding-left: 30px; line-height:35px; font-size:16px;border-bottom:1px dotted #ccc; background:url(../images/li2.png) left center no-repeat;}
+
 
 #detail2-box .content-box { width:695px; padding:0 20px; float:right;}
 #detail2-box .content-box .content { padding:0 0 20px 0; min-height:600px;}

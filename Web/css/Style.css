@@ -47,9 +47,25 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #index1-div1 { width:1000px; height:280px; margin:0 auto 15px auto;}
 #index1-div1 .index1-left675 { width:675px; height:270px; float:left; overflow:hidden;}
 #index1-div1 .index1-left675 p{ padding:10px; font-size:12px;text-indent: 2em; line-height:20px; color:#888;}
-#index1-div1 .index1-left675 p img{width: 280px; height: 250px; margin:0 10px 10px 0;}
+#index1-div1 .index1-left675 p img{width: 275px; height: 220px; margin:0 10px 10px 0;}
 #index1-div1 .index1-left675 p a{ margin-left:20px; color:#0aa6d6; font-size:12px;}
 
+
+
+#tab li {color:#0092EF; font-size: 15px; float:left;width:100px;height:30px;line-height:30px;text-align:center;border-bottom:none;}
+
+#tab_scroll ul li.fli {background-color:#f2f2f2; }
+
+#tab_scroll ul {overflow:hidden;zoom:1;list-style-type:none;}
+
+#tab_con {width:675px;height:250px;}
+
+#tab_con div {width:675px;height:250px;display:none;border-top:none;}
+
+#tab_con div.fdiv {display:block;background-color:#f2f2f2;}
+#tab_con div.fdiv li{height:40px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
+#tab_con div.fdiv li span{ position:absolute; top:0; right:15px; color:#bbb; font-size:12px;}
+#tab_con div.fdiv li a{width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
 
 
 #index1-div1 .index1-right300 { width:300px; height:270px; float:right; overflow:hidden;}
@@ -73,6 +89,7 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 .index1-scrollleft li{float:left;margin-right:7px;display:inline;width:220px;text-align:center;line-height:19px}
 .index1-scrollleft img{width:190px;height:140px;padding:10px;border:solid 1px #ddd;}
 
+
 /*tab切换样式*/
 .wrap{width: 300px; height: 260px; margin: auto;}
 .tabClick{ overflow: hidden; color: #0AA6D6; background:none;  margin-left: 0px;}
@@ -93,7 +110,7 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 
 #div5 { width:100%; background:#f4f4f4; border-top:1px solid #ccc;}
 #div5 .link-box { width:1000px;  padding-left: 200px; height:65px; line-height:65px; margin:0 auto; font-size:14px;}
-#div5 .link-box .select-link { padding:3px 15px; margin-right:50px; color:#666;}
+#div5 .link-box .select-link {width: 169px; height: 29px; padding:3px 15px; margin-right:80px; color:#666;}
 
 #div6 { width:100%; height:45px; background:#0aa6d6; color:#fff; text-align:center; line-height:45px;}
 #div6 a { text-decoration:underline; color:#84EFF8; margin-left:30px;}
