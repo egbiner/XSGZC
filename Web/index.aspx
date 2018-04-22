@@ -103,8 +103,8 @@ window.open(selObj.options[selObj.selectedIndex].value);}
 <div id="index1-div1" class="clearfix">
 	<div class="index1-left675" id="tab_scroll">
 <ul id="tab">
-    <li class="fli"><a href="news_detail.aspx?tid=11" target="_blank">党建快讯</a></li>
-    <li ><a href="news_detail.aspx?tid=12" target="_blank">学工党讯</a></li>
+    <li class="fli"><a href="news_list.aspx?tid=11" target="_blank">党建快讯</a></li>
+    <li ><a href="news_list.aspx?tid=12" target="_blank">学工党讯</a></li>
 </ul>
 <div id="tab_con">
     <div class="fdiv">
@@ -178,21 +178,22 @@ window.open(selObj.options[selObj.selectedIndex].value);}
             
  <script> 
  	//通知公告滚动代码
-		var speed=40 
-		var demo=document.getElementById("demo"); 
-		var demo2=document.getElementById("demo2"); 
-		var demo1=document.getElementById("demo1"); 
-		demo2.innerHTML=demo1.innerHTML ;
-		function Marquee(){ 
-		if(demo2.offsetTop-demo.scrollTop<=0) 
-		  demo.scrollTop-=demo1.offsetHeight; 
-		else{ 
-		  demo.scrollTop++ 
-		} 
-		} 
-		var MyMar=setInterval(Marquee,speed) 
-		demo.onmouseover=function() {clearInterval(MyMar)} 
-		demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+     var speed = 40
+     var demo = document.getElementById("demo");
+     var demo2 = document.getElementById("demo2");
+     var demo1 = document.getElementById("demo1");
+     demo2.innerHTML = demo1.innerHTML;
+     console.log(demo2.offsetTop)
+     function Marquee() {
+         if (demo.scrollHeight - demo.offsetHeight - demo.scrollTop <= 0)
+             demo.scrollTop = 0;
+         else {
+             demo.scrollTop++
+         }       
+     }
+     var MyMar = setInterval(Marquee, speed)
+     demo.onmouseover = function () { clearInterval(MyMar) }
+     demo.onmouseout = function () { MyMar = setInterval(Marquee, speed) } 
 </script>           
         </div>
         <div class="index1-right330">
@@ -207,12 +208,12 @@ window.open(selObj.options[selObj.selectedIndex].value);}
         </div>
         <!-- slider -->
         <div class="index1-pic-gun">
-        	<div class="title-box">学工风采<a href="#" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
+        	<div class="title-box">学工风采<a  class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
             <div class="index1-scrollleft clearfix">
                 <ul>
                     <%for (int i = dt_college_img.Rows.Count-1; i >=0; i--){ %>
                     <li>
-                    <a href="#"><img alt="<%=dt_college_img.Rows[i]["name"] %>" src="<%=dt_college_img.Rows[i]["url"] %>"/></a>
+                    <a><img alt="<%=dt_college_img.Rows[i]["name"] %>" src="<%=dt_college_img.Rows[i]["url"] %>"/></a>
                         <span><%=dt_college_img.Rows[i]["name"] %></span>
 				    </li>
                     <%}%>
@@ -303,15 +304,15 @@ window.open(selObj.options[selObj.selectedIndex].value);}
             <table border="0" width="100%" height="300px" style="margin-left: 27px;">
             
             	<tr>
-            		<td><a href="#"><img src="images/jpkc.jpg"></a></td>
-            		<td><a href="#"><img src="images/jwgl.jpg"></a></td>
+            		<td><a ><img src="images/jpkc.jpg"></a></td>
+            		<td><a ><img src="images/jwgl.jpg"></a></td>
             	</tr>
             	<tr>
             		<td><a href="http://utsc.guet.edu.cn/"><img src="images/jwxt.jpg"></a></td>
             		<td><a href="http://exp.gliet.edu.cn/dkl3/web/login.aspx"><img src="images/jxzy.jpg"></a></td>
             	</tr>
             	<tr>
-            		<td><a href="http://exp.gliet.edu.cn/guetcomment/manager/login.aspx"><img src="images/sfjs.jpg"></a></td>
+            		<td><a "><img src="images/sfjs.jpg"></a></td>
             		<td><a href="http://szhxy.guet.edu.cn/qxgl/public/Login.aspx?ReturnUrl=%2fqxgl%2fdefault.aspx"><img src="images/szhxy.jpg"></a></td>
             	</tr>
             </table>

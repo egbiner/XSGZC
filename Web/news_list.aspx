@@ -45,15 +45,15 @@
         <div class="tcdPageCode">          
             <a href="javascript:ToPage(1)">首页</a>
             <a href="javascript:ToPage(--page_num)">上一页</a>
-            <% for (i = 1; i < news_page.page_num; i++) { %>
+          <%--  <% for (i = 1; i < news_page.page_num; i++) { %>
             <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>
-            <b><a href="javascript:;"><%=news_page.page_num %></a></b>
-            <% for (i = news_page.page_num + 1; i <= news_page.total_page; i++) { %>
+            <% } %>--%>
+            <b>当前页：<a href="javascript:;"><%=news_page.page_num %>/<%=news_page.total_page %></a></b>
+          <%--  <% for (i = news_page.page_num + 1; i <= news_page.total_page; i++) { %>
             <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>
+            <% } %>--%>
             <a href="javascript:ToPage(++page_num)">下一页</a>
-            <a href="javascript:ToPage(total_page)">尾页</a>
+            <a href="javascript:ToPage(total_page)">尾页</a>         
         </div>
     </div>
 </div>
