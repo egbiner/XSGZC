@@ -389,6 +389,7 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.page.js" />
+    <Content Include="js\photo-scroll.js" />
     <Content Include="js\rev-setting-1.js" />
     <Content Include="js\script.js" />
     <Content Include="js\scroll.js" />
@@ -585,6 +586,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\XSGZC.pubxml" />
     <Content Include="rs-plugin\assets\Descr.WD3" />
     <Content Include="rs-plugin\assets\Thumbs.db" />

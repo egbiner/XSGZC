@@ -8,6 +8,6 @@
     <option value="7">办事流程</option>
     <option value="8">资料下载</option>
     <option value="9">校学文件</option>
-    <option value="11">党建快讯</option>
-    <option value="12">学工党讯</option>
+    <option value="11">党建热点知讯</option>
+    <option value="12">学工团委支部快讯</option>
 </select>

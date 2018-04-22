@@ -16,8 +16,8 @@ namespace Web
         public Page news_page4 = null;
         public Page news_page5 = null;
         public Page news_page6 = null;
-        public Page news_page7 = null;
-        public Page news_page8 = null;
+        public Page news_page7 = null;//党建热点知讯
+        public Page news_page8 = null;//学工团委支部快讯
         public DataTable url_dt1 = null;
         public DataTable url_dt2 = null;
         public DataTable url_dt3 = null;
@@ -31,8 +31,8 @@ namespace Web
             news_page4 = News.GetNewsPage(5, 1, 4);
             news_page5 = News.GetNewsPage(5, 1, 9);
             news_page6 = News.GetNewsPage(5, 1, 8);
-            news_page7 = News.GetNewsPage(1, 1, 11);
-            news_page8 = News.GetNewsPage(5, 1, 12);
+            news_page7 = News.GetNewsPage(6, 1, 11);
+            news_page8 = News.GetNewsPage(6, 1, 12);
             url_dt1 = SqlHelper.ExecuteDataTable("select * from friend_url where type=1 and show=1");
             url_dt2 = SqlHelper.ExecuteDataTable("select * from friend_url where type=2 and show=1");
             url_dt3 = SqlHelper.ExecuteDataTable("select * from friend_url where type=3 and show=1");

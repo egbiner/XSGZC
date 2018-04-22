@@ -10,7 +10,7 @@ html{-webkit-text-size-adjust:none;}/*chrome font-size<12px */
 a { color:#666; text-decoration:none;}
 a:hover { color:#0aa6d6; text-decoration:underline;}
 
-.all-web{width: 1200px; margin: auto;}
+.all-web{width: 1000px; margin: auto;}
 
 
 /********** index2 style start **********/
@@ -47,39 +47,65 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #index1-div1 { width:1000px; height:280px; margin:0 auto 15px auto;}
 #index1-div1 .index1-left675 { width:675px; height:270px; float:left; overflow:hidden;}
 #index1-div1 .index1-left675 p{ padding:10px; font-size:12px;text-indent: 2em; line-height:20px; color:#888;}
-#index1-div1 .index1-left675 p img{width: 275px; height: 220px; margin:0 10px 10px 0;}
-#index1-div1 .index1-left675 p a{ margin-left:20px; color:#0aa6d6; font-size:12px;}
+#index1-div1 .index1-left675 img{width: 275px; height: 220px;}
 
+span #banner_lun_bo_img_box{  
+    width:275px;  
+    height:220px;     
+    position:relative; 
+ 
+}  
+  
+span #banner_lun_bo_img{  
+    display:block;  
+    width:auto;  
+    height:auto;  
+    max-width:100%;  
+    max-height:100%;  
+}  
+  
+  
+ul.banner_lun_bo_img_ul li  
+{  
+	display: block;
+    float: left;  
+    width:15px;
+          
+    padding: 0;  
+    list-style:none;  
+    background-color: #006DCC;  
+    color:black;  
+     
+}  
+span .banner_lun_bo_img_ul li a{  
+    color: black;  
+    text-decoration: none;  
+ 
+}  
+ 
 
-
-#tab li {color:#0092EF; font-size: 15px; float:left;width:100px;height:30px;line-height:30px;text-align:center;border-bottom:none;}
-
+#tab li {color:#0092EF; font-size: 15px; float:left;width:150px;height:30px;line-height:30px;text-align:center;border-bottom:none;}
 #tab_scroll ul li.fli {background-color:#f2f2f2; }
-
 #tab_scroll ul {overflow:hidden;zoom:1;list-style-type:none;}
-
 #tab_con {width:675px;height:250px;}
-
 #tab_con div {width:675px;height:250px;display:none;border-top:none;}
-
 #tab_con div.fdiv {display:block;background-color:#f2f2f2;}
-#tab_con div.fdiv li{height:40px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
+#tab_con div.fdiv li{height:35px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
 #tab_con div.fdiv li span{ position:absolute; top:0; right:15px; color:#bbb; font-size:12px;}
-#tab_con div.fdiv li a{width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
-
-
+#tab_con div.fdiv li a{width:210px; height:28px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
+ 
 #index1-div1 .index1-right300 { width:300px; height:270px; float:right; overflow:hidden;}
-#index1-div1 .index1-right300 li{ height:40px; line-height:40px; padding-left:24px; background:url(../images/li.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
+#index1-div1 .index1-right300 li{ height:35px; line-height:40px; padding-left:24px; background:url(../images/li.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
 #index1-div1 .index1-right300 li a { width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
 #index1-div1 .index1-right300 li span { position:absolute; top:0; right:0; color:#bbb; font-size:12px;}
 #index1-div1 .notice { width:300px; height:270px; float:right; overflow:hidden;}
 
 #index1-div2 { width:1000px; margin:0 auto 15px auto;}
 #index1-div2 .index1-left675 { width:675px; float:left; overflow:hidden;}
-#index1-div2 .index1-left675 .index1-li-box { width:100%; height:395px; overflow:hidden;}
+#index1-div2 .index1-left675 .index1-li-box { width:100%; height:256px; overflow:hidden;}
 #index1-div2 .index1-left675 .index1-li-box .index1-left330 { width:330px; float:left;}
 #index1-div2 .index1-left675 .index1-li-box .index1-right330 { width:330px; float:right;}
-#index1-div2 .index1-left675 .index1-li-box li{ height:40px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
+#index1-div2 .index1-left675 .index1-li-box li{ height:35px; line-height:40px; padding-left:15px; background:url(../images/li_ii.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
 #index1-div2 .index1-left675 .index1-li-box li a { width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
 #index1-div2 .index1-left675 .index1-li-box li span { position:absolute; top:0; right:0; color:#bbb; font-size:12px;}
 
@@ -102,17 +128,17 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 .lineDiv{ background: #0aa6d6; height: 2px; width: 100px;}
 
 #index1-div2 .index1-right300 { width:300px; float:right; }
-#index1-div2 .index1-right300 .index1-list-menu { background:#f2f2f2; padding:10px 20px 30px 20px;}
+#index1-div2 .index1-right300 .index1-list-menu { background:#f2f2f2; padding:10px 20px 0px 20px;}
 #index1-div2 .index1-right300 .index1-list-menu li { height:35px; line-height:35px; text-align:center; font-size:16px; background:#fff; border:1px solid #ccc; margin-top:25px;}
 #index1-div2 .index1-right300 .index1-list-menu li a { display:block;}
 #index1-div2 .index1-right300 .index1-list-menu li a:hover { display:block; background:#0aa6d6; color:#fff; text-decoration:none;}
 
 
 #div5 { width:100%; background:#f4f4f4; border-top:1px solid #ccc;}
-#div5 .link-box { width:1000px;  padding-left: 200px; height:65px; line-height:65px; margin:0 auto; font-size:14px;}
+#div5 .link-box { width:1000px;  padding-left: 115px; height:50px; line-height:52px; margin:0 auto; font-size:14px;}
 #div5 .link-box .select-link {width: 169px; height: 29px; padding:3px 15px; margin-right:80px; color:#666;}
 
-#div6 { width:100%; height:45px; background:#0aa6d6; color:#fff; text-align:center; line-height:45px;}
+#div6 { width:100%; height:30px; background:#0aa6d6; color:#fff; text-align:center; line-height:35px;}
 #div6 a { text-decoration:underline; color:#84EFF8; margin-left:30px;}
 /* detail & list page style */
 #detail2-box { width:998px; background:url(../images/ny-bg1.png) top left repeat-x; margin:0 auto 15px auto; border:1px solid #ccc; border-radius:5px;}

@@ -10,5 +10,7 @@
             <li><a href="news_list.aspx?tid=7#detail2-box">办事流程</a></li>
             <li><a href="news_list.aspx?tid=8#detail2-box">资料下载</a></li>
             <li><a href="news_list.aspx?tid=9#detail2-box">校学文件</a></li>
+            <li><a href="news_list.aspx?tid=11#detail2-box">党建热点知讯</a></li>
+            <li><a href="news_list.aspx?tid=12#detail2-box">学工团委支部快讯</a></li>
         </ul>
     </div>
