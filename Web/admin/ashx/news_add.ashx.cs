@@ -29,7 +29,8 @@ namespace startup_hatch.ashx
             news.title = context.Request["title"];
             news.contents = context.Request["content"];
             news.author_id = admin.id;
-            news.create_time = DateTime.Now;
+            //news.create_time = DateTime.Now;
+            news.create_time = DateTime.Parse(context.Request["create_time"]);
 
             context.Response.Write(admin.AddNews(news));
         }

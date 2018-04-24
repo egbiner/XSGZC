@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\college_img.aspx" />
+    <Content Include="admin\css\mobiscroll.custom-2.5.0.min.css" />
     <Content Include="admin\index.aspx" />
+    <Content Include="admin\js\mobiscroll.custom-2.5.0.min.js" />
     <Content Include="admin\login.aspx" />
     <Content Include="admin\news_add.aspx" />
     <Content Include="admin\news_edit.aspx" />

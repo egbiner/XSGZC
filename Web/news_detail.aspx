@@ -40,7 +40,7 @@
         	    <p style="text-align:center">
                 作者：<%=news.author %>　
                 来源：学生工作处　
-                发布时间：<%=news.create_time.ToString("yyyy-MM-dd HH:mm") %>　
+                发布时间：<%=news.create_time.ToString("yyyy-MM-dd") %>　
                 点击数：<%=news.click %>　
               </p><br />
              <%=news.contents %>

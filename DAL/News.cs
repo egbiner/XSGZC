@@ -64,23 +64,25 @@ namespace MyClass
         {
             return SqlHelper.ExecuteNonQuery(
                 @"insert into news (type_id, title, author_id, contents, create_time, click)
-                    values(@type_id, @title, @author_id, @contents, getdate(), 0)",
+                    values(@type_id, @title, @author_id, @contents, @create_time, 0)",
                 new SqlParameter("@type_id", news.type_id),
                 new SqlParameter("@title", news.title),
                 new SqlParameter("@author_id", news.author_id),
-                new SqlParameter("@contents", news.contents)
+                new SqlParameter("@contents", news.contents),
+                new SqlParameter("@create_time", news.create_time)
                 );
         }
 
         public static int EditNews(News news)
         {
             return SqlHelper.ExecuteNonQuery(
-                @"update news set type_id=@type_id,title=@title,author_id=@author_id,contents=@contents where id=@id",
+                @"update news set type_id=@type_id,title=@title,author_id=@author_id,contents=@contents,create_time=@create_time where id=@id",
                 new SqlParameter("@type_id", news.type_id),
                 new SqlParameter("@title", news.title),
                 new SqlParameter("@author_id", news.author_id),
                 new SqlParameter("@contents", news.contents),
-                new SqlParameter("@id", news.id)
+                new SqlParameter("@id", news.id),
+                new SqlParameter("@create_time", news.create_time)
                 );
         }
 
