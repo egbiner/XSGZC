@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="news_detail.aspx.cs" Inherits="Web.news_detail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="introduce.aspx.cs" Inherits="Web.introduce" %>
 
 <!doctype html>
 <html>
@@ -30,9 +30,21 @@
 
 <!-- detail -->
 <div id="detail2-box" class="clearfix">
-	<div class="tit-80"><a href="index.aspx">首页</a> - <a href="news_list.aspx?tid=1#detail2-box">新闻中心</a> - <a href="news_list.aspx?tid=<%=news.type_id %>#detail2-box"><%=type_name %></a>- <a>新闻详情</a></div>
-
-    <!--#include file="nav.aspx"-->
+	<div class="tit-80"><a href="index.aspx">首页</a> - 部门概况</div>
+     <div class="tabula-box">
+    	<div class="max-tit">部门概况</div>
+        <ul>
+            <li><a id="525" href="introduce.aspx?id=525#detail2-box">单位介绍</a></li>
+            <li><a id="524" href="introduce.aspx?id=524#detail2-box">领导组成</a></li>
+            <li><a id="513" href="introduce.aspx?id=513#detail2-box">机构设置</a></li>
+            <li><a id="2637" href="introduce.aspx?id=2637#detail2-box">工作职责</a></li>
+            <li><a id="2317" href="introduce.aspx?id=2317#detail2-box">领导信箱</a></li>
+            <li><a href="introduce.aspx?id=2317#detail2-box">电子邮件</a></li>
+            <li><a id="2638" href="introduce.aspx?id=2638#detail2-box">通信地址</a></li>
+            <li><a id="2639" href="introduce.aspx?id=2639#detail2-box">联系电话</a></li>
+        </ul>
+    </div>
+    
 
     <div class="content-box">
     	<h1><%=news.title %></h1>
@@ -63,6 +75,9 @@
             //console.log(p);
         }
     });
+    $(document).ready(function () {
+        $("#<%=news.id %>").addClass("select");
+     });
 </script>
 
 </body>

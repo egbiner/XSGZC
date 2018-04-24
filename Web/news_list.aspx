@@ -45,13 +45,7 @@
         <div class="tcdPageCode">          
             <a href="javascript:ToPage(1)">首页</a>
             <a href="javascript:ToPage(--page_num)">上一页</a>
-          <%--  <% for (i = 1; i < news_page.page_num; i++) { %>
-            <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>--%>
             <b>当前页：<a href="javascript:;"><%=news_page.page_num %>/<%=news_page.total_page %></a></b>
-          <%--  <% for (i = news_page.page_num + 1; i <= news_page.total_page; i++) { %>
-            <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>--%>
             <a href="javascript:ToPage(++page_num)">下一页</a>
             <a href="javascript:ToPage(total_page)">尾页</a>         
         </div>
@@ -69,6 +63,10 @@
     var navid = <%=tid %>;
     $("#navid").val(navid);
 
+    $(document).ready(function () {
+        $("#<%=tid %>").addClass("select");
+     });
+
     function ToPage(page_number) {
         if (page_number < 1) {
             page_num = 1;
@@ -84,6 +82,7 @@
     function goToPage() {
         page_num = document.getElementById("page_number").value;
         ToPage(page_num);
+       
     }
 
 </script>

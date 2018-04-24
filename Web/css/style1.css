@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 默认全局样式 */
 body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, form, legend, fieldset, input, button, select, textarea {margin:0; padding:0; font-weight: normal;font-style: normal;font-size: 100%; font-family:'微软雅黑', 'Microsoft YaHei', 'YaHei', sans-serif;} 
 ol, ul ,li{list-style: none;} 
@@ -7,10 +7,10 @@ body {color:#666;font: 12px/1.5 Arial, Helvetica, sans-serif;background:url(../i
 html{-webkit-text-size-adjust:none;}/*chrome font-size<12px */
 /*清除浮动样式class="clearfix"*/
 .clearfix:after { content:"."; display:block; height:0;	clear:both;	visibility:hidden;}
-
+.select{ color:#0aa6d6!important; text-decoration:underline;}
 a,a:visited { color:#666; text-decoration:none; outline: none;}
-a:hover { color:#0aa6d6; text-decoration:underline;}
-
+a:hover{ color:#0aa6d6; text-decoration:underline;}
+a:active {color: #0aa6d6;text-decoration: underline;}
 
 .all-web{width: 1000px; margin: auto;/*background:url(../images/sky.jpg);background-repeat:no-repeat;background-size:contain;*/}
 
@@ -33,7 +33,7 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #menu-box ul li ul li { float:none; background-color:#0aa6d6 ;}
 #menu-box ul li ul {position:absolute;display:none;}
 #menu-box ul { width:1000px; height:40px; margin:0 auto;}
-#menu-box ul li { width:111px; height:40px; line-height:40px; float:left; text-align:center; font-size:16px;}
+#menu-box ul li { width:90.9px; height:40px; line-height:40px; float:left; text-align:center; font-size:16px;}
 #menu-box ul li:hover { background:#0782a8;}
 #menu-box ul li a{ color:#fff; text-decoration:none; display:block;}
 

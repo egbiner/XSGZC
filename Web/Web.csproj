@@ -386,6 +386,7 @@
     <Content Include="images\学工动态.jpg" />
     <Content Include="images\资助宣传.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="introduce.aspx" />
     <Content Include="js\jquery-1.7.1.min.js" />
     <Content Include="js\jquery-1.8.3.min.js" />
     <Content Include="js\jquery.js" />
@@ -535,6 +536,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="introduce.aspx.cs">
+      <DependentUpon>introduce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="introduce.aspx.designer.cs">
+      <DependentUpon>introduce.aspx</DependentUpon>
+    </Compile>
     <Compile Include="nav.aspx.cs">
       <DependentUpon>nav.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -589,6 +597,9 @@
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\XSGZC.pubxml" />
     <Content Include="rs-plugin\assets\Descr.WD3" />
     <Content Include="rs-plugin\assets\Thumbs.db" />

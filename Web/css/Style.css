@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 默认全局样式 */
 body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, form, legend, fieldset, input, button, select, textarea {margin:0; padding:0; font-weight: normal;font-style: normal;font-size: 100%; font-family:'微软雅黑', 'Microsoft YaHei', 'YaHei', sans-serif;} 
 ol, ul ,li{list-style: none;} 
@@ -31,7 +31,7 @@ a:hover { color:#0aa6d6; text-decoration:underline;}
 #menu-box ul li ul li { float:none; background-color:#0aa6d6 ;}
 #menu-box ul li ul {position:absolute;display:none;}
 #menu-box ul { width:1000px; height:40px; margin:0 auto;}
-#menu-box ul li { width:111px; height:40px; line-height:40px; float:left; text-align:center; font-size:16px;}
+#menu-box ul li { width:90.9px; height:40px; line-height:40px; float:left; text-align:center; font-size:16px;}
 #menu-box ul li:hover { background:#0782a8;}
 #menu-box ul li a{ color:#fff; text-decoration:none; display:block;}
 /* slider */
@@ -96,7 +96,7 @@ span .banner_lun_bo_img_ul li a{
  
 #index1-div1 .index1-right300 { width:300px; height:270px; float:right; overflow:hidden;}
 #index1-div1 .index1-right300 li{ height:35px; line-height:40px; padding-left:24px; background:url(../images/li.png) left center no-repeat; text-align:left; font-size:14px; border-bottom:1px dotted #ccc; position:relative;}
-#index1-div1 .index1-right300 li a { width:210px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
+#index1-div1 .index1-right300 li a { width:200px; height:35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display:inline-block;}
 #index1-div1 .index1-right300 li span { position:absolute; top:0; right:0; color:#bbb; font-size:12px;}
 #index1-div1 .notice { width:300px; height:270px; float:right; overflow:hidden;}
 

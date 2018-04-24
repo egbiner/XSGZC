@@ -76,3 +76,5 @@ Database/
 web/admin/attached/*
 web/upload_files/*
 !web/upload_files/file.txt
+Web/Properties/PublishProfiles/FolderProfile4.pubxml
+Web/Web.csproj
