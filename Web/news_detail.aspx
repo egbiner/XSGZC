@@ -63,6 +63,10 @@
             //console.log(p);
         }
     });
+
+    $(document).ready(function () {
+        $("#<%=news.type_id %>").addClass("select");
+     });
 </script>
 
 </body>

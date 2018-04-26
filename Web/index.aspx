@@ -127,7 +127,7 @@
 	</span>
             <ul style="padding-left: 15px; padding-bottom: 5px;">
                  <% foreach (var news in news_page7.pages) { %>
-                            <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
+                            <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
                  <%} %>
             </ul>
 </div>
@@ -140,7 +140,7 @@
 	</span>
             <ul style="padding-left: 15px; padding-bottom: 5px;">
                  <% foreach (var news in news_page8.pages) { %>
-                            <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
+                            <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
                  <%} %>
             </ul>
 </div>
@@ -184,7 +184,7 @@
           <ul id="demo1">
              <% foreach (var news in news_page1.pages) { %>
                 <li>
-                    <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a>&nbsp;<span>[<%=news.create_time.ToString("yyyy-MM-dd") %>]</span>
+                    <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title %></a>&nbsp;<span>[<%=news.create_time.ToString("yyyy-MM-dd") %>]</span>
                 </li>
                 <% } %>
 			<div id="demo2"></div>
@@ -221,7 +221,7 @@
             <ul>
                 <% foreach (var news in news_page2.pages) { %>
                     <li>
-                        <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span>
+                        <a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span>
                     </li>
                  <% } %>
             </ul>
@@ -232,7 +232,7 @@
         	<div class="title-box">学院风采<a href="news_list.aspx?tid=3#detail2-box" class="title-more" title="查看更多" target="_blank"><img src="images/12.gif"></a></div>
             <ul>
                 <% foreach (var news in news_page3.pages) { %>                             
-                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>                                  
+                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title %></a><span><%=news.create_time.ToString("yyyy-MM-dd") %></span></li>                                  
                  <% } %>
             </ul>
         </div>
@@ -285,21 +285,21 @@
 							
 						<ul>
 			                <% foreach (var news in news_page4.pages) { %>
-                                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>#detail2-box" target="_blank" title=""><%=news.title %></a></li>
+                                    <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>#detail2-box" target="_blank" title="<%=news.title %>"><%=news.title %></a></li>
                             <% } %>
 						</ul>			
 						</div>
 						<div class="tabList">
 							<ul>
 			                <% foreach (var news in news_page5.pages) { %>                                    
-                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a></li>
+                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title %></a></li>
                            <% } %>
 						</ul>	
 						</div>
 						<div class="tabList">
 							<ul>
 			                 <% foreach (var news in news_page6.pages) { %>
-                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title=""><%=news.title %></a></li>
+                                <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title %></a></li>
                             <% } %>	 
 						</ul>	
 						</div>
