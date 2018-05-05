@@ -63,7 +63,7 @@
     <form action="ashx/login.ashx" id="login1" method="post" onsubmit="return check()">
         <dl class="admin_login">
             <dt>
-                <strong>桂电学生资助中心管理后台</strong>
+                <strong>桂电学生工作处管理后台</strong>
                 <em>GUET Student Finance System Manage</em>
             </dt>
             <dd class="user_icon">

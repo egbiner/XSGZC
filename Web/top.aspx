@@ -77,7 +77,7 @@
 					<a href="#">传真</a>
 				</li>--%>
 				<li>
-					<a href="introduce.aspx?id=2317">电子邮件</a>
+					<a href="introduce.aspx?id=2738">电子邮件</a>
 				</li>
 				<li>
 					<a href="introduce.aspx?id=2638">通信地址</a>

@@ -39,7 +39,7 @@
             <li><a id="513" href="introduce.aspx?id=513#detail2-box">机构设置</a></li>
             <li><a id="2637" href="introduce.aspx?id=2637#detail2-box">工作职责</a></li>
             <li><a id="2317" href="introduce.aspx?id=2317#detail2-box">领导信箱</a></li>
-            <li><a href="introduce.aspx?id=2317#detail2-box">电子邮件</a></li>
+            <li><a id="2738" href="introduce.aspx?id=2317#detail2-box">电子邮件</a></li>
             <li><a id="2638" href="introduce.aspx?id=2638#detail2-box">通信地址</a></li>
             <li><a id="2639" href="introduce.aspx?id=2639#detail2-box">联系电话</a></li>
         </ul>
