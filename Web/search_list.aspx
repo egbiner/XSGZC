@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>二级网页</title>
+<title>学生工作处</title>
 <link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
 </head>
 
@@ -38,15 +38,9 @@
         <div class="tcdPageCode">           
             <a href="javascript:ToPage(1)">首页</a>
             <a href="javascript:ToPage(--page_num)">上一页</a>
-            <% for (i = 1; i < search_page.page_num; i++) { %>
-            <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>
-            <b><a href="javascript:;"><%=search_page.page_num %></a></b>
-            <% for (i = search_page.page_num + 1; i <= search_page.total_page; i++) { %>
-            <a href="javascript:ToPage(<%=i %>)"><%=i %></a>
-            <% } %>
+            <b>当前页：<a href="javascript:;"><%=search_page.page_num %>/<%=search_page.total_page %></a></b>
             <a href="javascript:ToPage(++page_num)">下一页</a>
-            <a href="javascript:ToPage(total_page)">尾页</a>
+            <a href="javascript:ToPage(total_page)">尾页</a>   
         </div>
     </div>
 </div>
