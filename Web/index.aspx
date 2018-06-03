@@ -113,17 +113,18 @@
 	<span id="banner_lun_bo_img_box" style="float: left; margin: 10px; display: block;">
 				    
             <img src="images/2.jpg" id="banner_lun_bo_img"/>  
-  
-    <span style="position:absolute; display: block; float: right; top:690px;">  
-        <ul class="banner_lun_bo_img_ul" style="margin-left: 5px; text-align: center; " >  
-            <li style="background: none;padding: 0; border: none; line-height:27px;">  
-                <a id="banner_lun_bo_a_1" onmouseover="setLunBoImage(0)">1</a>  
+
+	<span style="position:absolute; display: block; float: right; top:700px;">  
+        <ul class="banner_lun_bo_img_ul" style="margin-left: 5px;" >  
+            <li style=" background: none;padding: 0; line-height:14px; text-align: center; border-bottom: none; ">
+                <a style="width:10px; height: 15px;" id="banner_lun_bo_a_1" onmouseover="setLunBoImage(0)">1</a>  
             </li>  
-            <li id="banner_lun_bo_li_2" style="background: none; padding: 0; border: none; line-height:27px;">  
-                <a  id="banner_lun_bo_a_2" onmouseover="setLunBoImage(1)">2</a>  
-            </li>  
+            <li  style=" text-align: center; background: none; padding: 0;line-height:14px; border-bottom: none;">  
+                <a style="width:10px; height: 15px;" id="banner_lun_bo_a_2" onmouseover="setLunBoImage(1)">2</a>  
+            </li>   
         </ul>  
     </span>
+
 	</span>
             <ul style="padding-left: 15px; padding-bottom: 5px;">
                  <% foreach (var news in news_page7.pages) { %>
@@ -143,6 +144,7 @@
                             <li><a href="news_detail.aspx?id=<%=news.id %>&tid=<%=news.type_id %>" target="_blank" title="<%=news.title %>"><%=news.title%></a><span><%=news.create_time.ToString("yyyy-MM-dd")%></span></li>
                  <%} %>
             </ul>
+
 </div>
 <!--学工团委支部快讯 end-->
 <%--<div >
