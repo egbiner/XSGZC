@@ -12,7 +12,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/rev-setting-1.js"></script>
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/tab.js"></script>
+<%--<script type="text/javascript" src="js/tab.js"></script>--%>
 <script type="text/javascript">
     //图片滚动 调用方法 imgscroll({speed: 30,amount: 1,dir: "up"});
     $.fn.imgscroll = function (o) {
@@ -68,7 +68,7 @@
         window.open(selObj.options[selObj.selectedIndex].value);
     }
 </script>
-<script type="text/javascript" src="js/photo-scroll.js"></script>
+<%--<script type="text/javascript" src="js/photo-scroll.js"></script>--%>
 </head>
 <body>
 
@@ -114,7 +114,7 @@
 				    
             <img src="images/2.jpg" id="banner_lun_bo_img"/>  
 
-	<span style="position:absolute; display: block; float: right; top:700px;">  
+<%--	<span style="position:absolute; display: block; float: right; top:700px;">  
         <ul class="banner_lun_bo_img_ul" style="margin-left: 5px;" >  
             <li style=" background: none;padding: 0; line-height:14px; text-align: center; border-bottom: none; ">
                 <a style="width:10px; height: 15px;" id="banner_lun_bo_a_1" onmouseover="setLunBoImage(0)">1</a>  
@@ -123,7 +123,7 @@
                 <a style="width:10px; height: 15px;" id="banner_lun_bo_a_2" onmouseover="setLunBoImage(1)">2</a>  
             </li>   
         </ul>  
-    </span>
+    </span>--%>
 
 	</span>
             <ul style="padding-left: 15px; padding-bottom: 5px;">
@@ -200,7 +200,6 @@
      var demo2 = document.getElementById("demo2");
      var demo1 = document.getElementById("demo1");
      demo2.innerHTML = demo1.innerHTML;
-     console.log(demo2.offsetTop)
      function Marquee() {
          if (demo.scrollHeight - demo.offsetHeight - demo.scrollTop <= 0)
              demo.scrollTop = 0;
